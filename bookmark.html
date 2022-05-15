@@ -12,7 +12,7 @@
 
 <header>
 
-    <h1>Quiz-APP</h1>
+    <h1>bookmarks</h1>
 
 </header>
 
@@ -26,16 +26,16 @@
     </p>
 
     <div class="qcard__buttonbox">
-        <button onclick="document.getElementById('qcard__answer').style.display='inline'">SHOW ANSWER</button>
+        <button onclick="document.getElementById('qcard__answer').style.display='inline'">SHOW ANSWER </button>
     </div>
 
     <a href="">
-        <img class="qcard__bookmark" 
+        <img class="qcard__bookmark--marked" 
         src="/icons/book2.png"
         alt="bookmark">
     </a>
 
-    <p id="qcard__answer"><strong>Antwort: </strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore, debitis consequuntur tenetur impedit sit quam dolores?
+    <p id="qcard__answer"><strong>Antwort: </strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore, debitis consequuntur tenetur impedit sit quam dolores?
     </p>
 
     <ul class="tagbox" role="list">
@@ -56,16 +56,16 @@
     </p>
 
     <div>
-        <button class="qcard__buttonbox" onclick="document.getElementById('qcard__answer2').style.display='inline'">SHOW ANSWER </button>
+        <button class="qcard__buttonbox" onclick="document.getElementById('qcard__answer').style.display='inline'">SHOW ANSWER </button>
     </div>
 
     <a href="">
-        <img class="qcard__bookmark" 
+        <img class="qcard__bookmark qcard__bookmark--marked" 
         src="/icons/book2.png"
         alt="bookmark">
     </a>
 
-    <p id="qcard__answer2"><strong>Antwort: </strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore, debitis consequuntur tenetur impedit sit quam dolores?
+    <p id="qcard__answer"><strong>Antwort: </strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore, debitis consequuntur tenetur impedit sit quam dolores?
     </p>
 
     <ul class="tagbox" role="list">
@@ -86,16 +86,16 @@
     </p>
 
     <div>
-        <button class="qcard__buttonbox" onclick="document.getElementById('qcard__answer3').style.display='inline'">SHOW ANSWER</button>
+        <button class="qcard__buttonbox" onclick="document.getElementById('qcard__answer').style.display='inline'">SHOW ANSWER </button>
     </div>
 
     <a href="">
-        <img class="qcard__bookmark" 
+        <img class="qcard__bookmark qcard__bookmark--marked" 
         src="/icons/book2.png"
         alt="bookmark">
     </a>
 
-    <p id="qcard__answer3"><strong>Antwort:</strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore, debitis consequuntur tenetur impedit sit quam dolores?
+    <p id="qcard__answer"><strong>Antwort: </strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore, debitis consequuntur tenetur impedit sit quam dolores?
     </p>
 
     <ul class="tagbox" role="list">
@@ -111,10 +111,11 @@
 </main>
 
 <nav class="navigation">
+    <!--NAVIGATION-->
 
     <a href="">
       <img
-        class="navi__item navi__item--marked"
+        class="navi__item navi__item"
         src="icons/home2.png"
         alt="list menue"
       />
@@ -122,7 +123,7 @@
 
     <a href="">
       <img
-        class="navi__item navi__item--highlight"
+        class="navi__item navi__item--marked"
         src="/icons/book2.png"
         alt="search"
       />
@@ -130,7 +131,7 @@
 
     <a href="">
       <img
-        class="navi__item navi__item--highlight"
+        class="navi__item"
         src="/icons/pen2.png"
         alt="notifications"
       />
@@ -138,7 +139,7 @@
 
     <a href="">
       <img
-        class="navi__item navi__item--highlight"
+        class="navi__item"
         src="/icons/user2.png"
         alt="profile"
       />
