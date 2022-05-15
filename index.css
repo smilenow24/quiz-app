@@ -4,6 +4,7 @@
 @import "qcard.css";
 @import "bookmark.css";
 @import "create.css";
+@import "profil.css";
 
 * {
     box-sizing: border-box;
