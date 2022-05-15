@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Code+Pro:wght@200;400;500;600;700&display=swap');
+
+@import "navigation.css";
+@import "qcard.css";
+@import "bookmark.css";
+@import "create.css";
+@import "profil.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #2d4052ae;
+    
+    font-family: "Koulen", cursive;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+main {
+    margin-bottom: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+
+    font-family: 'Pacifico', cursive;
+    font-family: 'Source Code Pro', monospace;
+}
+
+h1 {
+    color:white;
+    font-size: 40px;   
+}

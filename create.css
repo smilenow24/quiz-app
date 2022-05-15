@@ -1,0 +1,37 @@
+
+.creatbox {
+    display: flex;
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    flex-wrap: nowrap;
+
+
+    border: solid 2px white;
+
+    margin: 2rem;
+    padding: 0.5rem;
+}
+
+.creatbox textarea {
+    position: relative;
+    justify-content:space-around;
+    width: 100%;
+    max-width: 80vh; 
+    flex-wrap: nowrap;
+}
+
+.creatbox div {
+    justify-content: center;
+}
+
+.qtag {
+    width:40vh;
+    position: relative;
+    
+}
+
+form ul li {
+    list-style: none;
+}

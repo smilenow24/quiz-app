@@ -1,0 +1,41 @@
+
+.profil {
+    display: flex;
+    justify-content:space-around;
+    padding: 1vh 1vh 1vh 1vh;
+    align-items: center;;
+}
+
+.profilcontent {
+    margin: 2.5vh;
+    padding-bottom: 10vH;
+    border: solid 2px white;
+
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+.profil-img {
+    height: 150px;
+    border: solid rgb(9, 9, 13) 5px;
+    border-radius: 1000px;
+}
+
+.aboutme {
+    padding: 2vh 5vh 2vh 5vh;
+}
+
+.logoutbutton {
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+}
+
+.itemcenter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
