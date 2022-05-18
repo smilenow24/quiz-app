@@ -1,12 +1,11 @@
 
 .creatbox {
     display: flex;
-    justify-content:space-between;
+    justify-content:flex-start;
 
-    align-items:flex-start;
+    align-items: center;
 
-    flex-wrap: nowrap;
-
+    flex-wrap: wrap;
 
     border: solid 2px white;
 

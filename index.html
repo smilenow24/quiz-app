@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="index.css"/>
+    <skript src="index.js"></skript>
 </head>
 
 <body>
@@ -26,16 +27,18 @@
     </p>
 
     <div class="qcard__buttonbox">
-        <button onclick="document.getElementById('qcard__answer').style.display='inline'">SHOW ANSWER</button>
+
+      <button data-js="qcard-button">SHOW ANSWER</button>
+       <!-- <button onclick="document.getElementById('qcard__answer').style.display='inline'">SHOW ANSWER</button>-->
     </div>
 
     <a href="">
-        <img class="qcard__bookmark" 
+        <img class="qcard__bookmark" data-js="bookmark"
         src="/icons/book2.png"
         alt="bookmark">
     </a>
 
-    <p id="qcard__answer"><strong>Antwort: </strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore, debitis consequuntur tenetur impedit sit quam dolores?
+    <p class="qcard__answer" data-js="qcard__answer"><strong>Antwort: </strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore, debitis consequuntur tenetur impedit sit quam dolores?
     </p>
 
     <ul class="tagbox" role="list">
@@ -65,7 +68,7 @@
         alt="bookmark">
     </a>
 
-    <p id="qcard__answer2"><strong>Antwort:</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore, debitis consequuntur tenetur impedit sit quam dolores?
+    <p id="qcard__answer2"><strong>Antwort: </strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore, debitis consequuntur tenetur impedit sit quam dolores?
     </p>
 
     <ul class="tagbox" role="list">
@@ -95,7 +98,7 @@
         alt="bookmark">
     </a>
 
-    <p id="qcard__answer3"><strong>Antwort:</strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore, debitis consequuntur tenetur impedit sit quam dolores?
+    <p id="qcard__answer3"><strong>Antwort: </strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore, debitis consequuntur tenetur impedit sit quam dolores?
     </p>
 
     <ul class="tagbox" role="list">
@@ -112,7 +115,7 @@
 
 <nav class="navigation">
 
-    <a href="">
+    <a href="index.html">
       <img
         class="navi__item navi__item--marked"
         src="icons/home2.png"
@@ -120,7 +123,7 @@
       />
     </a>
 
-    <a href="">
+    <a href="bookmark.html">
       <img
         class="navi__item navi__item--highlight"
         src="/icons/book2.png"
@@ -128,7 +131,7 @@
       />
     </a>
 
-    <a href="">
+    <a href="create.html">
       <img
         class="navi__item navi__item--highlight"
         src="/icons/pen2.png"
@@ -136,7 +139,7 @@
       />
     </a>
 
-    <a href="">
+    <a href="profil.html">
       <img
         class="navi__item navi__item--highlight"
         src="/icons/user2.png"
