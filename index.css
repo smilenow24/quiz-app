@@ -42,3 +42,7 @@ h1 {
     color:white;
     font-size: 40px;   
 }
+
+.qcard__answer {
+    display: none;
+}
