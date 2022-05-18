@@ -1,22 +1,40 @@
 
+echo = "test";
 
-const answerHide = document.querySelector('[data-js="qcard-button"]');
-const answerButton = document.querySelector(".qcard__answer");
+console.clear();
+
+const textElement = document.querySelector('[data-js="qcard__answer"]');
+const button = document.querySelector('[data-js="qcard-button"]');
+
+function onButtonClick(){
+  textElement.classList.toggle('qcard__answer--active');
+} 
+
+button.addEventListener("click", onButtonClick);
+
+
+
+
+/*
+const buttonShowHide = document.querySelector('[data-js="qcard-button"]');
+const answerField = document.querySelector('[data-js="qcard__answer"]');
+
 
 function showAnswer(){
-  answerHide.classlist.style.display = "inline";
+  answerField.classlist.style.display = "inline";
+  buttonShowHide.textContent = "HIDE ANSWER";
 }
 
-answerButton.addEventListener('onclick', showAnswer);
+buttonShowHide.addEventListener('onclick', showAnswer);
 
 
 
 
-const bookmarkButton = document.querySelector('[data-js="qcard-button"]');
+const bookmarkButton = document.querySelector('');
 
 questionButton.addEventListener('onclick', showAnswer);
 
-function showAnswer(){
+function bookmarkActive(){
   document.querySelector(".qcard__answer").style.display = 'inline';
 }
 

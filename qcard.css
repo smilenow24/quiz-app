@@ -7,10 +7,9 @@
 
     align-items: center;
 
-
     border: solid 2px white;
 
-    margin: 2rem;
+    margin: 1rem;
     padding: 0.5rem;
 }
 
@@ -81,11 +80,11 @@
     flex-wrap: wrap;
     margin-left: 1vh;
     margin-right: auto;
-    gap: 10px;
+    gap: 15px;
 }
 
 .tagbox li {
-    padding: 1em;
+    padding: 0.5em;
     margin: 0.5em;
     border: solid;
 }

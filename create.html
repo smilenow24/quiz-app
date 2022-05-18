@@ -21,14 +21,13 @@
 <section class="creatbox">
 
   <form method = "get">
-    <label for="q-area"><strong>QUESTION:</strong></label>
+    <fieldset>
+    <label for="q-area" aria-describedby="question field"><strong>QUESTION:</strong></label>
       <textarea rows = "3" id ="q-area" name = "description1" required></textarea>
-        <input type="submit">
       
 
-    <label for="a-area"><strong>ANSWER:</strong></label>
+    <label for="a-area" aria-labelledby="question"><strong>ANSWER:</strong></label>
       <textarea rows = "7" id ="a-area" name = "description2" required></textarea>
-        <input type="submit">
 
     <strong>QUESTION-TAGS:</strong> 
     <ul role="list">
@@ -84,7 +83,8 @@
     </ul>
          
     <div><input type = "submit" value = "submit" /></div>
-
+  </fieldset>
+  </form>
 </section>
 
 

@@ -46,3 +46,7 @@ h1 {
 .qcard__answer {
     display: none;
 }
+
+.qcard__answer--active {
+    display: inline;
+}
