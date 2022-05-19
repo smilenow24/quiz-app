@@ -16,7 +16,6 @@ function onButtonClick2() {
 qcardButton1.addEventListener('click', onButtonClick1);
 qcardButton2.addEventListener('click', onButtonClick2);
 
-
 const textElement1 = document.querySelector('[data-js="qcard__answer1"]');
 const textElement2 = document.querySelector('[data-js="qcard__answer2"]');
 
@@ -32,7 +31,6 @@ function onButtonClick2() {
 
 qcardButton1.addEventListener('click', onButtonClick1);
 qcardButton2.addEventListener('click', onButtonClick2);
-
 
 /*
 const buttonShowHide = document.querySelector('[data-js="qcard-button"]');
