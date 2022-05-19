@@ -3,14 +3,22 @@ echo = "test";
 
 console.clear();
 
-const textElement = document.querySelector('[data-js="qcard__answer"]');
-const button = document.querySelector('[data-js="qcard-button"]');
+const textElement1 = document.querySelector('[data-js="qcard__answer1"]');
+const textElement2 = document.querySelector('[data-js="qcard__answer2"]');
 
-function onButtonClick(){
-  textElement.classList.toggle('qcard__answer--active');
+const qcardButton1 = document.querySelector('[data-js="qcard-button1"]');
+const qcardButton2 = document.querySelector('[data-js="qcard-button2"]');
+
+function onButtonClick1(){
+  textElement1.classList.toggle('qcard__answer--active');
+} 
+function onButtonClick2(){
+  textElement2.classList.toggle('qcard__answer--active');
 } 
 
-button.addEventListener("click", onButtonClick);
+qcardButton1.addEventListener("click", onButtonClick1);
+qcardButton2.addEventListener("click", onButtonClick2);
+
 
 
 
@@ -37,7 +45,4 @@ questionButton.addEventListener('onclick', showAnswer);
 function bookmarkActive(){
   document.querySelector(".qcard__answer").style.display = 'inline';
 }
-
-
-
-
+*/
