@@ -1,60 +1,57 @@
-
 .profil {
-    display: flex;
-    justify-content:center;
-    padding: 1vh 1vh 1vh 1vh;
-    align-items: center;;
+  display: flex;
+  justify-content: center;
+  padding: 1vh;
+  align-items: center;
 }
 
 .profilcontent {
-    margin: 2.5vh;
-    padding-bottom: 10vH;
-    border: solid 2px white;
-
-    flex-wrap: wrap;
-    justify-content:center;
-    align-items: center;
+  margin: 2.5vh;
+  padding-bottom: 10vh;
+  border: solid 2px white;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .profil-img {
-    height: 150px;
-    border: solid rgb(9, 9, 13) 5px;
-    border-radius: 1000px;
-    margin: 1em 1em;
+  height: 150px;
+  border: solid rgb(9 9 13) 5px;
+  border-radius: 1000px;
+  margin: 1em;
 }
 
 .aboutme {
-    padding: 2vh 5vh 2vh 5vh;
+  padding: 2vh 5vh;
 }
 
 .logoutbutton {
-    height: 40px;
-    width: 100px;
-    font-size: 15px;
-    margin: 4em;
+  height: 40px;
+  width: 100px;
+  font-size: 15px;
+  margin: 4em;
 }
 
 .itemcenter {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
 }
 
 .profil__tagbox {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-left: 1vh;
-    margin-right: auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 1vh;
+  margin-right: auto;
 }
 
 .profil__tagbox li {
-    padding: 1em;
-    margin: 0.5em;
-    border: solid;
+  padding: 1em;
+  margin: 0.5em;
+  border: solid;
 }
