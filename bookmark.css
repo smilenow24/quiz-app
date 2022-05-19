@@ -1,15 +1,12 @@
-
 .qcard__bookmark--marked {
-    width: 45px;
-    height: 40px;
-    filter: invert(0);
-    position: absolute;
-    right: 0.6rem;
-    top: -0.6rem;
+  width: 45px;
+  height: 40px;
+  filter: invert(0);
+  position: absolute;
+  right: 0.6rem;
+  top: -0.6rem;
 }
 
 .qcard__bookmark--marked:active {
-
-    filter: invert(1);
-    
+  filter: invert(1);
 }

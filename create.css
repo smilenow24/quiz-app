@@ -1,36 +1,30 @@
-
 .creatbox {
-    display: flex;
-    justify-content:flex-start;
-
-    align-items: center;
-
-    flex-wrap: wrap;
-
-    border: solid 2px white;
-
-    margin: 2rem;
-    padding: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  border: solid 2px white;
+  margin: 2rem;
+  padding: 0.5rem;
 }
 
 .creatbox textarea {
-    position: relative;
-    justify-content:space-around;
-    width: 100%;
-    max-width: 80vh; 
-    flex-wrap: nowrap;
+  position: relative;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 80vh;
+  flex-wrap: nowrap;
 }
 
 .creatbox div {
-    justify-content: center;
+  justify-content: center;
 }
 
 .qtag {
-    width:40vh;
-    position: relative;
-    
+  width: 40vh;
+  position: relative;
 }
 
 form ul li {
-    list-style: none;
+  list-style: none;
 }

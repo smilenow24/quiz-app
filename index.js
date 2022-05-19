@@ -1,6 +1,3 @@
-
-echo = "test";
-
 console.clear();
 
 const textElement1 = document.querySelector('[data-js="qcard__answer1"]');
@@ -9,18 +6,32 @@ const textElement2 = document.querySelector('[data-js="qcard__answer2"]');
 const qcardButton1 = document.querySelector('[data-js="qcard-button1"]');
 const qcardButton2 = document.querySelector('[data-js="qcard-button2"]');
 
-function onButtonClick1(){
+function onButtonClick1() {
   textElement1.classList.toggle('qcard__answer--active');
-} 
-function onButtonClick2(){
+}
+function onButtonClick2() {
   textElement2.classList.toggle('qcard__answer--active');
-} 
+}
 
-qcardButton1.addEventListener("click", onButtonClick1);
-qcardButton2.addEventListener("click", onButtonClick2);
+qcardButton1.addEventListener('click', onButtonClick1);
+qcardButton2.addEventListener('click', onButtonClick2);
 
 
+const textElement1 = document.querySelector('[data-js="qcard__answer1"]');
+const textElement2 = document.querySelector('[data-js="qcard__answer2"]');
 
+const qcardButton1 = document.querySelector('[data-js="qcard-button1"]');
+const qcardButton2 = document.querySelector('[data-js="qcard-button2"]');
+
+function onButtonClick1() {
+  textElement1.classList.toggle('qcard__answer--active');
+}
+function onButtonClick2() {
+  textElement2.classList.toggle('qcard__answer--active');
+}
+
+qcardButton1.addEventListener('click', onButtonClick1);
+qcardButton2.addEventListener('click', onButtonClick2);
 
 
 /*

@@ -1,91 +1,80 @@
-
 .qcard {
-    position: relative;
-
-    display:flex;
-    flex-wrap: wrap;
-
-    align-items: center;
-
-    border: solid 2px white;
-
-    margin: 1rem;
-    padding: 0.5rem;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: solid 2px white;
+  margin: 1rem;
+  padding: 0.5rem;
 }
 
-.qcard h2{
-    font-size: large;
+.qcard h2 {
+  font-size: large;
 }
 
 .qcard__headline {
-    font-size: 1rem;
-    line-height: 0.3;
+  font-size: 1rem;
+  line-height: 0.3;
 }
 
 .qcard__bookmark {
-    width: 45px;
-    height: 40px;
-    filter: invert();
-    position: absolute;
-    right: 0.6rem;
-    top: -0.6rem;
+  width: 45px;
+  height: 40px;
+  filter: invert();
+  position: absolute;
+  right: 0.6rem;
+  top: -0.6rem;
 }
 
 .qcard__bookmark:active {
-
-    filter: invert(0);
-    
+  filter: invert(0);
 }
 
 .qcard__guestion {
-    padding-left: 1.5em;
-    padding-right: 2em;
+  padding-left: 1.5em;
+  padding-right: 2em;
 }
 
-#qcard__answer {
-    display:none;
-
-    padding-left: 1.5em;
-    padding-right: 2em;
+.qcard__answer {
+  display: none;
+  padding-left: 1.5em;
+  padding-right: 2em;
 }
 
-#qcard__answer2 {
-    display:none;
-
-    padding-left: 1.5em;
-    padding-right: 2em;
+.qcard__answer2 {
+  display: none;
+  padding-left: 1.5em;
+  padding-right: 2em;
 }
 
-#qcard__answer3 {
-    display:none;
-
-    padding-left: 1.5em;
-    padding-right: 2em;
+.qcard__answer3 {
+  display: none;
+  padding-left: 1.5em;
+  padding-right: 2em;
 }
 
 .qcard__buttonbox {
-    display: flex;
-    justify-content: center;
-    margin: 1vh 25vh 1vh 25vh;
+  display: flex;
+  justify-content: center;
+  margin: 1vh 25vh;
 }
 
 .qcard div {
-    width: 100%;
+  width: 100%;
 }
 
 .tagbox {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-left: 1vh;
-    margin-right: auto;
-    gap: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 1vh;
+  margin-right: auto;
+  gap: 15px;
 }
 
 .tagbox li {
-    padding: 0.5em;
-    margin: 0.5em;
-    border: solid;
+  padding: 0.5em;
+  margin: 0.5em;
+  border: solid;
 }
-  

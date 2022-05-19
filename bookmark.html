@@ -1,152 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="index.css" />
     <skript type="text/javascript" src="index.js"></skript>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <h1>bookmarks</h1>
+    </header>
 
-<header>
+    <main>
+      <section class="qcard">
+        <h2 class="qcard__headline">Question</h2>
 
-    <h1>bookmarks</h1>
+        <p class="qcard__guestion">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore,
+          debitis consequuntur tenetur impedit sit quam dolores?
+        </p>
 
-</header>
+        <div class="qcard__buttonbox">
+          <button
+            onclick="document.getElementById('qcard__answer').style.display='inline'"
+          >
+            SHOW ANSWER
+          </button>
+        </div>
 
-<main>
+        <a href="">
+          <img
+            class="qcard__bookmark--marked"
+            src="/icons/book2.png"
+            alt="bookmark"
+          />
+        </a>
 
-<section class="qcard">
+        <p id="qcard__answer">
+          <strong>Antwort: </strong>Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Sint labore, debitis consequuntur tenetur impedit
+          sit quam dolores?
+        </p>
 
-    <h2 class="qcard__headline">Question</h2>
+        <ul class="tagbox" role="list">
+          <li>TAG 1</li>
+          <li>TAG 2</li>
+          <li>TAG 3</li>
+          <li>TAG 4</li>
+        </ul>
+      </section>
 
-    <p class="qcard__guestion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore, debitis consequuntur tenetur impedit sit quam dolores?
-    </p>
+      <section class="qcard">
+        <h2 class="qcard__headline">Question</h2>
 
-    <div class="qcard__buttonbox">
-        <button onclick="document.getElementById('qcard__answer').style.display='inline'">SHOW ANSWER </button>
-    </div>
+        <p class="qcard__guestion">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore,
+          debitis consequuntur tenetur impedit sit quam dolores?
+        </p>
 
-    <a href="">
-        <img class="qcard__bookmark--marked"
-        src="/icons/book2.png"
-        alt="bookmark">
-    </a>
+        <div>
+          <button
+            class="qcard__buttonbox"
+            onclick="document.getElementById('qcard__answer').style.display='inline'"
+          >
+            SHOW ANSWER
+          </button>
+        </div>
 
-    <p id="qcard__answer"><strong>Antwort: </strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore, debitis consequuntur tenetur impedit sit quam dolores?
-    </p>
+        <a href="">
+          <img
+            class="qcard__bookmark qcard__bookmark--marked"
+            src="/icons/book2.png"
+            alt="bookmark"
+          />
+        </a>
 
-    <ul class="tagbox" role="list">
-        <li>TAG 1</li>
-        <li>TAG 2</li>
-        <li>TAG 3</li>
-        <li>TAG 4</li>
-    </ul>
+        <p id="qcard__answer">
+          <strong>Antwort: </strong>Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Sint labore, debitis consequuntur tenetur impedit
+          sit quam dolores?
+        </p>
 
+        <ul class="tagbox" role="list">
+          <li>TAG 1</li>
+          <li>TAG 2</li>
+          <li>TAG 3</li>
+          <li>TAG 4</li>
+        </ul>
+      </section>
 
-</section>
+      <section class="qcard">
+        <h2 class="qcard__headline">Question</h2>
 
-<section class="qcard">
+        <p class="qcard__guestion">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore,
+          debitis consequuntur tenetur impedit sit quam dolores?
+        </p>
 
-    <h2 class="qcard__headline">Question</h2>
+        <div>
+          <button
+            class="qcard__buttonbox"
+            onclick="document.getElementById('qcard__answer').style.display='inline'"
+          >
+            SHOW ANSWER
+          </button>
+        </div>
 
-    <p class="qcard__guestion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore, debitis consequuntur tenetur impedit sit quam dolores?
-    </p>
+        <a href="">
+          <img
+            class="qcard__bookmark qcard__bookmark--marked"
+            src="/icons/book2.png"
+            alt="bookmark"
+          />
+        </a>
 
-    <div>
-        <button class="qcard__buttonbox" onclick="document.getElementById('qcard__answer').style.display='inline'">SHOW ANSWER </button>
-    </div>
+        <p id="qcard__answer">
+          <strong>Antwort: </strong>Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Sint labore, debitis consequuntur tenetur impedit
+          sit quam dolores?
+        </p>
 
-    <a href="">
-        <img class="qcard__bookmark qcard__bookmark--marked" 
-        src="/icons/book2.png"
-        alt="bookmark">
-    </a>
+        <ul class="tagbox" role="list">
+          <li>TAG 1</li>
+          <li>TAG 2</li>
+          <li>TAG 3</li>
+          <li>TAG 4</li>
+        </ul>
+      </section>
+    </main>
 
-    <p id="qcard__answer"><strong>Antwort: </strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore, debitis consequuntur tenetur impedit sit quam dolores?
-    </p>
+    <nav class="navigation">
+      <!--NAVIGATION-->
 
-    <ul class="tagbox" role="list">
-        <li>TAG 1</li>
-        <li>TAG 2</li>
-        <li>TAG 3</li>
-        <li>TAG 4</li>
-    </ul>
+      <a href="index.html">
+        <img
+          class="navi__item navi__item"
+          src="icons/home2.png"
+          alt="list menue"
+        />
+      </a>
 
+      <a href="bookmark.html">
+        <img
+          class="navi__item navi__item--marked"
+          src="/icons/book2.png"
+          alt="search"
+        />
+      </a>
 
-</section>
+      <a href="create.html">
+        <img class="navi__item" src="/icons/pen2.png" alt="notifications" />
+      </a>
 
-<section class="qcard">
-
-    <h2 class="qcard__headline">Question</h2>
-
-    <p class="qcard__guestion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore, debitis consequuntur tenetur impedit sit quam dolores?
-    </p>
-
-    <div>
-        <button class="qcard__buttonbox" onclick="document.getElementById('qcard__answer').style.display='inline'">SHOW ANSWER </button>
-    </div>
-
-    <a href="">
-        <img class="qcard__bookmark qcard__bookmark--marked" 
-        src="/icons/book2.png"
-        alt="bookmark">
-    </a>
-
-    <p id="qcard__answer"><strong>Antwort: </strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore, debitis consequuntur tenetur impedit sit quam dolores?
-    </p>
-
-    <ul class="tagbox" role="list">
-        <li>TAG 1</li>
-        <li>TAG 2</li>
-        <li>TAG 3</li>
-        <li>TAG 4</li>
-    </ul>
-
-
-</section>
-
-</main>
-
-<nav class="navigation">
-    <!--NAVIGATION-->
-
-    <a href="index.html">
-      <img
-        class="navi__item navi__item"
-        src="icons/home2.png"
-        alt="list menue"
-      />
-    </a>
-
-    <a href="bookmark.html">
-      <img
-        class="navi__item navi__item--marked"
-        src="/icons/book2.png"
-        alt="search"
-      />
-    </a>
-
-    <a href="create.html">
-      <img
-        class="navi__item"
-        src="/icons/pen2.png"
-        alt="notifications"
-      />
-    </a>
-
-    <a href="profil.html">
-      <img
-        class="navi__item"
-        src="/icons/user2.png"
-        alt="profile"
-      />
-    </a>
-  </nav>
-
-
-</body>
+      <a href="profil.html">
+        <img class="navi__item" src="/icons/user2.png" alt="profile" />
+      </a>
+    </nav>
+  </body>
 </html>
