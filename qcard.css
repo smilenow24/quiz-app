@@ -2,10 +2,11 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   border: solid 2px white;
-  margin: 1rem;
-  padding: 0.5rem;
+  margin: 3em;
+  padding: 0.5em;
 }
 
 .qcard h2 {
@@ -15,19 +16,6 @@
 .qcard__headline {
   font-size: 1rem;
   line-height: 0.3;
-}
-
-.qcard__bookmark {
-  width: 45px;
-  height: 40px;
-  filter: invert();
-  position: absolute;
-  right: 0.6rem;
-  top: -0.6rem;
-}
-
-.qcard__bookmark:active {
-  filter: invert(0);
 }
 
 .qcard__guestion {
@@ -41,10 +29,26 @@
   padding-right: 2em;
 }
 
+.qcard__answer--active {
+  display: inline;
+}
+
+.hideAnswer {
+  display: none;
+}
+
+.hideAnswer--active {
+  display: inline;
+}
+
 .qcard__answer2 {
   display: none;
   padding-left: 1.5em;
   padding-right: 2em;
+}
+
+.qcard__answer--active2 {
+  display: inline;
 }
 
 .qcard__answer3 {
@@ -53,10 +57,9 @@
   padding-right: 2em;
 }
 
-.qcard__buttonbox {
-  display: flex;
-  justify-content: center;
-  margin: 1vh 25vh;
+.qCard-button1 {
+  margin: 0;
+  padding: 0;
 }
 
 .qcard div {

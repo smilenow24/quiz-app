@@ -34,3 +34,14 @@
   );
   border-radius: 20%;
 }
+
+.hideMeNow1,
+.hideMeNow2,
+.hideMeNow3,
+.hideMeNow4 {
+  display: none;
+}
+
+.hideMeNow {
+  display: block;
+}
