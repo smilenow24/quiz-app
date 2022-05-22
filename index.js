@@ -1,57 +1,82 @@
-console.clear();
+import { bookmarkFct1 } from './js/bookmark.js';
+import { qCardButtonFct1 } from './js/answer.js';
+import { naviChange } from './js/navigation.js';
 
-const textElement1 = document.querySelector('[data-js="qcard__answer1"]');
-const textElement2 = document.querySelector('[data-js="qcard__answer2"]');
+naviChange();
+qCardButtonFct1();
+bookmarkFct1();
 
-const qcardButton1 = document.querySelector('[data-js="qcard-button1"]');
-const qcardButton2 = document.querySelector('[data-js="qcard-button2"]');
+//qCardButtonFct2()
 
-function onButtonClick1() {
-  textElement1.classList.toggle('qcard__answer--active');
+//Bookmark//
+/*const b11 = document.querySelector('[data-js="bookmark"]');
+
+function bookmarkFct1() {
+  
+  b11.classList.toggle('qcard__bookmark--active');
+  b11.addEventListener('click', bookmarkFct1)
 }
-function onButtonClick2() {
-  textElement2.classList.toggle('qcard__answer--active');
-}
+b11.addEventListener('click', bookmarkFct1)*/
 
-qcardButton1.addEventListener('click', onButtonClick1);
-qcardButton2.addEventListener('click', onButtonClick2);
-
-const textElement3 = document.querySelector('[data-js="qcard__answer1"]');
-const textElement4 = document.querySelector('[data-js="qcard__answer2"]');
-
-const qcardButton3 = document.querySelector('[data-js="qcard-button1"]');
-const qcardButton4 = document.querySelector('[data-js="qcard-button2"]');
-
-function onButtonClick3() {
-  textElement1.classList.toggle('qcard__answer--active');
-}
-function onButtonClick4() {
-  textElement2.classList.toggle('qcard__answer--active');
-}
-
-qcardButton1.addEventListener('click', onButtonClick1);
-qcardButton2.addEventListener('click', onButtonClick2);
-
+//Navigation//
 /*
-const buttonShowHide = document.querySelector('[data-js="qcard-button"]');
-const answerField = document.querySelector('[data-js="qcard__answer"]');
+const naviButtonHome = document.querySelector('[data-js="navi__itemHome"]');
+const naviButtonBookmark = document.querySelector('[data-js="navi__itemBookmark"]');
+const naviButtonCreate = document.querySelector('[data-js="navi__itemCreate"]');
+const naviButtonProfil = document.querySelector('[data-js="navi__itemProfil"]');
+
+const naviButtonHomeActive = document.querySelector('hideMeNow1');
+const naviButtonBookmarkActive = document.querySelector('hideMeNow2');
+const naviButtonCreateActive = document.querySelector('hideMeNow3');
+const naviButtonProfilActive = document.querySelector('hideMeNow4');
 
 
-function showAnswer(){
-  answerField.classlist.style.display = "inline";
-  buttonShowHide.textContent = "HIDE ANSWER";
-}
+naviButtonHome.addEventListener('click', () => {
+  
+  naviButtonHome.classList.add('navi__item--marked');
+  naviButtonBookmark.classList.remove('navi__item--marked');
+  naviButtonCreate.classList.remove('navi__item--marked');
+  naviButtonProfil.classList.remove('navi__item--marked');
 
-buttonShowHide.addEventListener('onclick', showAnswer);
+  naviButtonHomeActive.classList.add('hideMeNow--marked');
+  naviButtonBookmarkActive.classList.remove('hideMeNow--marked');
+  naviButtonCreateActive.classList.remove('hideMeNow--marked');
+  naviButtonProfilActive.classList.remove('hideMeNow--marked');
+});
 
+naviButtonBookmark.addEventListener('click', () => {
 
+  naviButtonHome.classList.remove('navi__item--marked');
+  naviButtonBookmark.classList.add('navi__item--marked');
+  naviButtonCreate.classList.remove('navi__item--marked');
+  naviButtonProfil.classList.remove('navi__item--marked');
 
+  naviButtonHomeActive.classList.remove('hideMeNow--marked');
+  naviButtonBookmarkActive.classList.add('hideMeNow--marked');
+  naviButtonCreateActive.classList.remove('hideMeNow--marked');
+  naviButtonProfilActive.classList.remove('hideMeNow--marked');
+});
 
-const bookmarkButton = document.querySelector('');
+naviButtonCreate.addEventListener('click', () => {
+  naviButtonHome.classList.remove('navi__item--marked');
+  naviButtonBookmark.classList.remove('navi__item--marked');
+  naviButtonCreate.classList.add('navi__item--marked');
+  naviButtonProfil.classList.remove('navi__item--marked');
 
-questionButton.addEventListener('onclick', showAnswer);
+  naviButtonHomeActive.classList.remove('hideMeNow--marked');
+  naviButtonBookmarkActive.classList.remove('hideMeNow--marked');
+  naviButtonCreateActive.classList.add('hideMeNow--marked');
+  naviButtonProfilActive.classList.remove('hideMeNow--marked');
+});
 
-function bookmarkActive(){
-  document.querySelector(".qcard__answer").style.display = 'inline';
-}
-*/
+naviButtonProfil.addEventListener('click', () => {
+  naviButtonHome.classList.remove('navi__item--marked');
+  naviButtonBookmark.classList.remove('navi__item--marked');
+  naviButtonCreate.classList.remove('navi__item--marked');
+  naviButtonProfil.classList.add('navi__item--marked');
+
+  naviButtonHomeActive.classList.remove('hideMeNow--marked');
+  naviButtonBookmarkActive.classList.remove('hideMeNow--marked');
+  naviButtonCreateActive.classList.remove('hideMeNow--marked');
+  naviButtonProfilActive.classList.add('hideMeNow--marked');
+}); */

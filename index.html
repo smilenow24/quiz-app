@@ -13,7 +13,7 @@
       <h1>Quiz-APP</h1>
     </header>
 
-    <main>
+    <main class="hideMeNow1">
       <section class="qcard">
         <h2 class="qcard__headline">Question</h2>
 
@@ -22,18 +22,16 @@
           debitis consequuntur tenetur impedit sit quam dolores?
         </p>
 
-        <div class="qcard__buttonbox">
-          <button data-js="qcard-button1">SHOW ANSWER</button>
-        </div>
+        <button class="qCard-button1" data-js="qCard-button1">
+          <p class="showAnswer">SHOW ANSWER</p>
+        </button>
 
-        <a href="">
-          <img
-            class="qcard__bookmark"
-            data-js="bookmark"
-            src="/icons/book2.png"
-            alt="bookmarks"
-          />
-        </a>
+        <img
+          class="bookmark"
+          data-js="bookmark"
+          src="/icons/book2.png"
+          alt="bookmarks"
+        />
 
         <p class="qcard__answer" data-js="qcard__answer1">
           <strong>Antwort: </strong> Lorem ipsum, dolor sit amet consectetur
@@ -57,20 +55,16 @@
           debitis consequuntur tenetur impedit sit quam dolores?
         </p>
 
-        <div class="qcard__buttonbox">
-          <button data-js="qcard-button2">SHOW ANSWER</button>
-        </div>
+        <button data-js="qcard-button2">SHOW ANSWER</button>
 
-        <a href="">
-          <img
-            class="qcard__bookmark"
-            data-js="bookmark"
-            src="/icons/book2.png"
-            alt="bookmark"
-          />
-        </a>
+        <img
+          class="bookmark"
+          data-js="bookmark"
+          src="/icons/book2.png"
+          alt="bookmark"
+        />
 
-        <p class="qcard__answer" data-js="qcard__answer2">
+        <p class="qcard__answer2" data-js="qcard__answer2">
           <strong>Antwort: </strong> Lorem ipsum, dolor sit amet consectetur
           adipisicing elit. Sint labore, debitis consequuntur tenetur impedit
           sit quam dolores?
@@ -85,40 +79,249 @@
       </section>
     </main>
 
-    <nav class="navigation">
-      <a href="index.html">
-        <img
-          class="navi__item navi__item--marked"
-          src="icons/home2.png"
-          alt="list menue"
-        />
-      </a>
+    <main class="hideMeNow2">
+      <section class="qcard">
+        <h2 class="qcard__headline">Question</h2>
 
-      <a href="bookmark.html">
+        <p class="qcard__guestion">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore,
+          debitis consequuntur tenetur impedit sit quam dolores?
+        </p>
+
+        <button class="qcard__buttonbox">SHOW ANSWER</button>
+
         <img
-          class="navi__item navi__item--highlight"
+          class="bookmark"
+          data-js="bookmark"
           src="/icons/book2.png"
-          alt="search"
+          alt="bookmark"
         />
-      </a>
 
-      <a href="create.html">
-        <img
-          class="navi__item navi__item--highlight"
-          src="/icons/pen2.png"
-          alt="notifications"
-        />
-      </a>
+        <p id="qcard__answer">
+          <strong>Antwort: </strong>Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Sint labore, debitis consequuntur tenetur impedit
+          sit quam dolores?
+        </p>
 
-      <a href="profil.html">
-        <img
-          class="navi__item navi__item--highlight"
-          src="/icons/user2.png"
-          alt="profile"
-        />
-      </a>
+        <ul class="tagbox" role="list">
+          <li>TAG 1</li>
+          <li>TAG 2</li>
+          <li>TAG 3</li>
+          <li>TAG 4</li>
+        </ul>
+      </section>
+
+      <section class="qcard">
+        <h2 class="qcard__headline">Question</h2>
+
+        <p class="qcard__guestion">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore,
+          debitis consequuntur tenetur impedit sit quam dolores?
+        </p>
+
+        <div>
+          <button class="qcard__buttonbox">SHOW ANSWER</button>
+        </div>
+
+        <a href="">
+          <img
+            class="qcard__bookmark qcard__bookmark--marked"
+            src="/icons/book2.png"
+            alt="bookmark"
+          />
+        </a>
+
+        <p class="qcard__answer">
+          <strong>Antwort: </strong>Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Sint labore, debitis consequuntur tenetur impedit
+          sit quam dolores?
+        </p>
+
+        <ul class="tagbox" role="list">
+          <li>TAG 1</li>
+          <li>TAG 2</li>
+          <li>TAG 3</li>
+          <li>TAG 4</li>
+        </ul>
+      </section>
+
+      <section class="qcard">
+        <h2 class="qcard__headline">Question</h2>
+
+        <p class="qcard__guestion">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint labore,
+          debitis consequuntur tenetur impedit sit quam dolores?
+        </p>
+
+        <div>
+          <button class="qcard__buttonbox">SHOW ANSWER</button>
+        </div>
+
+        <a href="">
+          <img class="qcard__bookmark" src="/icons/book2.png" alt="bookmark" />
+        </a>
+
+        <p class="qcard__answer">
+          <strong>Antwort: </strong>Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Sint labore, debitis consequuntur tenetur impedit
+          sit quam dolores?
+        </p>
+
+        <ul class="tagbox" role="list">
+          <li>TAG 1</li>
+          <li>TAG 2</li>
+          <li>TAG 3</li>
+          <li>TAG 4</li>
+        </ul>
+      </section>
+    </main>
+
+    <main class="hideMeNow3">
+      <section class="creatbox">
+        <form method="get">
+          <fieldset>
+            <label for="q-area" aria-describedby="question field"
+              ><strong>QUESTION:</strong></label
+            >
+            <textarea
+              rows="3"
+              id="q-area"
+              name="description1"
+              required
+            ></textarea>
+
+            <label for="a-area" aria-labelledby="question"
+              ><strong>ANSWER:</strong></label
+            >
+            <textarea
+              rows="7"
+              id="a-area"
+              name="description2"
+              required
+            ></textarea>
+
+            <strong>QUESTION-TAGS:</strong>
+            <ul role="list">
+              <li>
+                <select class="qtag" name="hint-tags1" required>
+                  <optgroup label="question group a">
+                    <option value="tag1">TAG A</option>
+                    <option value="tag2">TAG 2</option>
+                    <option value="tag3">TAG 3</option>
+                    <option value="tag1">TAG 4</option>
+                    <option value="tag2">TAG 5</option>
+                    <option value="tag3">TAG 6</option>
+                  </optgroup>
+                </select>
+              </li>
+
+              <li>
+                <select class="qtag" name="hint-tags2" required>
+                  <optgroup label="question group b">
+                    <option value="tag1">TAG B</option>
+                    <option value="tag2">TAG 2</option>
+                    <option value="tag3">TAG 3</option>
+                    <option value="tag1">TAG 4</option>
+                    <option value="tag2">TAG 5</option>
+                    <option value="tag3">TAG 6</option>
+                  </optgroup>
+                </select>
+              </li>
+
+              <li>
+                <select class="qtag" name="hint-tags3" required>
+                  <optgroup label="question group c">
+                    <option value="tag1">TAG C</option>
+                    <option value="tag2">TAG 2</option>
+                    <option value="tag3">TAG 3</option>
+                    <option value="tag1">TAG 4</option>
+                    <option value="tag2">TAG 5</option>
+                    <option value="tag3">TAG 6</option>
+                  </optgroup>
+                </select>
+              </li>
+
+              <li>
+                <select class="qtag" name="hint-tags4" required>
+                  <optgroup label="question group d">
+                    <option value="tag1">TAG D</option>
+                    <option value="tag2">TAG 2</option>
+                    <option value="tag3">TAG 3</option>
+                    <option value="tag1">TAG 4</option>
+                    <option value="tag2">TAG 5</option>
+                    <option value="tag3">TAG 6</option>
+                  </optgroup>
+                </select>
+              </li>
+            </ul>
+
+            <div><input type="submit" value="submit" /></div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <main class="hideMeNow4">
+      <section class="profil profilcontent">
+        <img class="profil-img" src="/images/bild2.jpeg" alt=" " />
+        <h2>My Profile Name</h2>
+      </section>
+
+      <section class="aboutme">
+        <h3>About Me</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
+          accusantium amet quidem quisquam unde obcaecati quia quod odio atque
+          neque consequuntur impedit fugiat, natus nisi autem, magnam velit
+          placeat? Suscipit. Obcaecati, quibusdam, iste quas aperiam velit
+          sapiente error placeat ab unde cupiditate tempora esse hic odit, animi
+          quaerat deserunt. Praesentium illum labore iste ab. Sed, accusantium
+          consequatur. Itaque, sapiente! Nobis?
+        </p>
+
+        <h3>Skill Tags</h3>
+
+        <div class="itemcenter">
+          <ul class="itemcenter profil__tagbox" role="list">
+            <li>TAG 1</li>
+            <li>TAG 2</li>
+            <li>TAG 3</li>
+          </ul>
+        </div>
+
+        <div class="itemcenter">
+          <button class="logoutbutton">LOGOUT</button>
+        </div>
+      </section>
+    </main>
+
+    <nav class="navigation">
+      <img
+        class="navi__item"
+        data-js="navi__itemHome"
+        src="icons/home2.png"
+        alt="list menue"
+      />
+      <img
+        class="navi__item"
+        data-js="navi__itemBookmark"
+        src="/icons/book2.png"
+        alt="search"
+      />
+      <img
+        class="navi__item"
+        data-js="navi__itemCreate"
+        src="/icons/pen2.png"
+        alt="notifications"
+      />
+      <img
+        class="navi__item"
+        data-js="navi__itemProfil"
+        src="/icons/user2.png"
+        alt="profile"
+      />
     </nav>
 
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>
