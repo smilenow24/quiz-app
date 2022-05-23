@@ -39,9 +39,9 @@
 .hideMeNow2,
 .hideMeNow3,
 .hideMeNow4 {
-  display: none;
+  display: block;
 }
 
 .hideMeNow {
-  display: block;
+  display: none;
 }
