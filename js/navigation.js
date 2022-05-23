@@ -10,10 +10,23 @@ export function naviChange() {
     '[data-js="navi__itemProfil"]'
   );
 
-  const naviButtonHomeActive = document.querySelector('hideMeNow1');
-  const naviButtonBookmarkActive = document.querySelector('hideMeNow2');
-  const naviButtonCreateActive = document.querySelector('hideMeNow3');
-  const naviButtonProfilActive = document.querySelector('hideMeNow4');
+  const naviButtonHomeActive = document.querySelector('[data-js="hideMeNow1"]');
+  const naviButtonBookmarkActive = document.querySelector(
+    '[data-js="hideMeNow2"]'
+  );
+  const naviButtonCreateActive = document.querySelector(
+    '[data-js="hideMeNow3"]'
+  );
+  const naviButtonProfilActive = document.querySelector(
+    '[data-js="hideMeNow4"]'
+  );
+
+  console.log(
+    naviButtonHomeActive,
+    naviButtonBookmarkActive,
+    naviButtonCreateActive,
+    naviButtonProfilActive
+  );
 
   naviButtonHome.addEventListener('click', () => {
     naviButtonHome.classList.add('navi__item--marked');
@@ -21,10 +34,11 @@ export function naviChange() {
     naviButtonCreate.classList.remove('navi__item--marked');
     naviButtonProfil.classList.remove('navi__item--marked');
 
-    naviButtonHomeActive.classList.toggle('hideMeNow--marked');
-    naviButtonBookmarkActive.classList.remove('hideMeNow--marked');
-    naviButtonCreateActive.classList.remove('hideMeNow--marked');
-    naviButtonProfilActive.classList.remove('hideMeNow--marked');
+    naviButtonHomeActive.classList.remove('hideMeNow');
+    naviButtonBookmarkActive.classList.add('hideMeNow');
+    naviButtonCreateActive.classList.add('hideMeNow');
+    naviButtonProfilActive.classList.add('hideMeNow');
+    console.log(naviButtonHomeActive);
   });
 
   naviButtonBookmark.addEventListener('click', () => {
@@ -33,10 +47,10 @@ export function naviChange() {
     naviButtonCreate.classList.remove('navi__item--marked');
     naviButtonProfil.classList.remove('navi__item--marked');
 
-    naviButtonHomeActive.classList.remove('hideMeNow--marked');
-    naviButtonBookmarkActive.classList.add('hideMeNow--marked');
-    naviButtonCreateActive.classList.remove('hideMeNow--marked');
-    naviButtonProfilActive.classList.remove('hideMeNow--marked');
+    naviButtonHomeActive.classList.add('hideMeNow');
+    naviButtonBookmarkActive.classList.remove('hideMeNow');
+    naviButtonCreateActive.classList.add('hideMeNow');
+    naviButtonProfilActive.classList.add('hideMeNow');
   });
 
   naviButtonCreate.addEventListener('click', () => {
@@ -45,10 +59,10 @@ export function naviChange() {
     naviButtonCreate.classList.add('navi__item--marked');
     naviButtonProfil.classList.remove('navi__item--marked');
 
-    naviButtonHomeActive.classList.remove('hideMeNow--marked');
-    naviButtonBookmarkActive.classList.remove('hideMeNow--marked');
-    naviButtonCreateActive.classList.add('hideMeNow--marked');
-    naviButtonProfilActive.classList.remove('hideMeNow--marked');
+    naviButtonHomeActive.classList.add('hideMeNow');
+    naviButtonBookmarkActive.classList.add('hideMeNow');
+    naviButtonCreateActive.classList.remove('hideMeNow');
+    naviButtonProfilActive.classList.add('hideMeNow');
   });
 
   naviButtonProfil.addEventListener('click', () => {
@@ -57,10 +71,10 @@ export function naviChange() {
     naviButtonCreate.classList.remove('navi__item--marked');
     naviButtonProfil.classList.add('navi__item--marked');
 
-    naviButtonHomeActive.classList.remove('hideMeNow--marked');
-    naviButtonBookmarkActive.classList.remove('hideMeNow--marked');
-    naviButtonCreateActive.classList.remove('hideMeNow--marked');
-    naviButtonProfilActive.classList.add('hideMeNow--marked');
+    naviButtonHomeActive.classList.add('hideMeNow');
+    naviButtonBookmarkActive.classList.add('hideMeNow');
+    naviButtonCreateActive.classList.add('hideMeNow');
+    naviButtonProfilActive.classList.remove('hideMeNow');
   });
 }
 

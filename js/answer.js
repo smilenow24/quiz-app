@@ -6,7 +6,7 @@ export function qCardButtonFct1() {
     element1.classList.toggle('qcard__answer--active');
 
     if (qCardButton1.innerText === 'SHOW ANSWER') {
-      qCardButton1.innerText = 'HIDE Answer';
+      qCardButton1.innerText = 'HIDE ANSWER';
     } else {
       qCardButton1.innerText = 'SHOW ANSWER';
     }
